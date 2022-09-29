@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--background-page-color);
+    color: var(--text-color);
+    transition: .3s;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+    margin-top: 26px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--button-text-color);
+    font-weight: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --background-page-color:#003636;
+    --text-color:#ffffff;
+    --background-button-color:#ffffff;
+    --background-button-color-hover:#d0ff01;
+    --button-text-color:#000000;
+
+    --body-font:'Poppins', sans-serif;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1rem;
+    --normal-font-size:.938rem;
+    --small-font-size:.813rem;
+    --smaller-font-size:.75rem;
+}
+
+
+
+    
+.img_container {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*picture */
+    background-image: url(img/1.jpg);
+}
+
+.pp_container {
+    position: relative;
+}
+
+.pp {
+    height: 150px;
+    width: 150px;
+
+    border-radius: 100%;
+    margin: 8px;
+
+    position: absolute;
+    top: -50px;
+    left:50%;
+    transform: translateX(-50%);
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main{
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+    background-color: var(--background-button-color);
+    width: 60vw;
+    padding: 1rem;
+    margin: 0.3rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: var(--background-button-color-hover);
+    transform: scale(1.03);
+}
+
+.icon>*{
+    margin:10px ;
+    columns: var(--text-color);
+   
+}
+
+.icon>*:hover{
+    color: var(--background-button-color-hover);
+   
+}
